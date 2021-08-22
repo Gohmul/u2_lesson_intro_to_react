@@ -3,6 +3,7 @@
 <div style="text-align:center;">
     <img src="https://blog.wildix.com/wp-content/uploads/2020/06/react-logo.jpg"/>
 </div>
+
 ## Overview
 
 In this lesson, we'll about React! React is a javascript library that gives us the ability to build some awesome single page applications using only javascript. This library allows us to build an interactive UI utilizing a modular component structure. The goal here is to break our code up into re-usable modules that can update our UI in a simple and efficient manner.
