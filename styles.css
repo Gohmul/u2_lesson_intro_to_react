@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-.my-button {
+button {
   background-color: blueviolet;
   height: 100px;
   width: 200px;
@@ -14,4 +14,12 @@
   border-radius: 10px;
   border: 0;
   cursor: pointer;
+}
+
+.my-button {
+  background-color: cornflowerblue;
+}
+
+.babel-button {
+  background-color: gold;
 }
