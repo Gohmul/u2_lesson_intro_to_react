@@ -415,7 +415,7 @@ Once the server loads, the following page should load in your browser:
     <img src="https://sei-r.s3.amazonaws.com/u2_intro_to_react/react-app.gif"/>
 </div>
 
-To stop the server you can use the <kbd>ctrl</kbd> + <kbd>c</kbd> keys.
+To stop the server you can use the <kbd>ctrl</kbd> + <kbd>c</kbd> keys in the terminal window where the server is running.
 
 ## Recap
 
