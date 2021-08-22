@@ -122,7 +122,7 @@ Okay hold on, theres a quite a lot going on here. Let's explain:
 
 Take a look at your `index.html` file in the browser and try interacting with the button we created!
 
-<div style="text-align:center;">
+<div>
     <img src="https://sei-r.s3.amazonaws.com/u2_intro_to_react/class-button.gif"/>
 </div>
 
