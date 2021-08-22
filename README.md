@@ -1,6 +1,6 @@
 # Intro To React
 
-<div style="text-align:center;">
+<div>
     <img src="https://blog.wildix.com/wp-content/uploads/2020/06/react-logo.jpg"/>
 </div>
 
@@ -165,7 +165,7 @@ Let's talk about this syntax, it looks shorter.... But it accomplishes the same 
 
 Let's try this new component in our browser too!
 
-<div style="text-align:center;">
+<div>
     <img src="https://sei-r.s3.amazonaws.com/u2_intro_to_react/function-button.gif"/>
 </div>
 
@@ -226,7 +226,7 @@ ReactDOM.render(<Button />, container)
 
 Let's take a look at the browser one more time!
 
-<div style="text-align:center;">
+<div>
     <img src="https://sei-r.s3.amazonaws.com/u2_intro_to_react/jsx-button.gif"/>
 </div>
 
@@ -411,7 +411,7 @@ npm start
 
 Once the server loads, the following page should load in your browser:
 
-<div style="text-align:center;">
+<div>
     <img src="https://sei-r.s3.amazonaws.com/u2_intro_to_react/react-app.gif"/>
 </div>
 
