@@ -21,7 +21,7 @@ From [sharpcorner.com](https://www.c-sharpcorner.com/article/what-and-why-reactj
 
 > React allows developers to create large web applications that can change data, without reloading the page. The main purpose of React is to be fast, scalable, and simple. It works only on user interfaces in the application. This corresponds to the view in the MVC template. It can be used with a combination of other JavaScript libraries or frameworks, such as Angular JS in MVC.
 
-In short, React gives us the ability to rapidly build applications that are highly interactive in a quick and efficient manner. It uses something called the `virtual DOM` which is an abstraction layer over the native browser DOM. By using the the `virtual DOM` to facilitate the communication between our code and the actual DOM. React uses a `modular` **`component`** based approach.
+In short, React gives us the ability to rapidly build applications that are highly interactive in a quick and efficient manner. It uses something called the `virtual DOM` which is an abstraction layer over the native browser DOM. By using the the `virtual DOM`, React facilitates the communication between our code and the actual DOM. React uses a `modular` **`component`** based approach.
 
 ## Creating a project with React
 
