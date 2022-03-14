@@ -138,14 +138,14 @@ function Button() {
   const handleCounterUpdate = () => {
     updateCounter(counter + 1)
   }
-  //   return React.createElement(
-  //     'button',
-  //     {
-  //       onClick: handleCounterUpdate,
-  //       className: 'my-button'
-  //     },
-  //     counter
-  //   )
+    return React.createElement(
+      'button',
+      {
+        onClick: handleCounterUpdate,
+        className: 'my-button'
+      },
+      counter
+    )
 }
 
 const element = React.createElement(Button)
@@ -184,7 +184,7 @@ Let's add the following script above our `button.js` script in the `index.html`:
 Next modify the type for the `button.js` script:
 
 ```html
-<script src="scripts/button.js" type="text/babel"></script>
+<script defer src="scripts/button.js" type="text/babel"></script>
 ```
 
 > This will tell the browser to talk to babel in order to read our code.
