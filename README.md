@@ -6,7 +6,7 @@
 
 ## Overview
 
-In this lesson, we'll about React! React is a javascript library that gives us the ability to build some awesome single page applications using only javascript. This library allows us to build an interactive UI utilizing a modular component structure. The goal here is to break our code up into re-usable modules that can update our UI in a simple and efficient manner.
+In this lesson, we'll talk about React! React is a javascript library that gives us the ability to build some awesome single page applications using only javascript. This library allows us to build an interactive UI utilizing a modular component structure. The goal here is to break our code up into re-usable modules that can update our UI in a simple and efficient manner.
 
 ## Getting Started
 
