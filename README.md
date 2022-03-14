@@ -50,7 +50,7 @@ Let's start by:
   ```
 - last step! Link the provided `button.js` file located in the `scripts` folder to our html. (Place this below the previous scripts!)
   ```html
-  <script src="scripts/button.js" type="text/javascript"></script>
+  <script defer src="scripts/button.js" type="text/javascript"></script>
   ```
 
 Let's do a quick recap:
