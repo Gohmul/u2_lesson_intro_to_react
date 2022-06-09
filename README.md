@@ -39,14 +39,8 @@ Let's start by:
   ```
 - next we'll add a couple of `scripts` to our html (make sure to add these after the newly created `div`)
   ```html
-  <script
-    src="https://unpkg.com/react@17/umd/react.development.js"
-    crossorigin
-  ></script>
-  <script
-    src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
-    crossorigin
-  ></script>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
   ```
 - last step! Link the provided `button.js` file located in the `scripts` folder to our html. (Place this below the previous scripts!)
   ```html
@@ -134,23 +128,23 @@ Let's comment out the current code in the `button.js` (keep the `container` vari
 
 ```js
 function Button() {
-  const [counter, updateCounter] = React.useState(0)
-  const handleCounterUpdate = () => {
-    updateCounter(counter + 1)
-  }
+    const [counter, updateCounter] = React.useState(0)
+    const handleCounterUpdate = () => {
+        updateCounter(counter + 1)
+    }
     return React.createElement(
-      'button',
-      {
-        onClick: handleCounterUpdate,
-        className: 'my-button'
-      },
-      counter
+        'button',
+        {
+            onClick: handleCounterUpdate,
+            className: 'my-button'
+        },
+        counter
     )
 }
 
-const element = React.createElement(Button)
 
-ReactDOM.render(element, container)
+const root = ReactDOM.createRoot(container)
+root.render(React.createElement(Button))
 ```
 
 Let's talk about this syntax, it looks shorter.... But it accomplishes the same thing!
@@ -161,7 +155,8 @@ Let's talk about this syntax, it looks shorter.... But it accomplishes the same 
 - We're also passing in an additional property to our `button` element, `className`
   - `class` is a reserved word in javascript for obvious reasons. In order to add a `class` attribute to our element, we use `className` instead.
 - We create the element the same way as before with `React.createElement`
-- We append the element to the DOM using the `ReactDOM`'s render method.
+- We create a `root` object with the `createRoot` method of ReactDOM passing in our container variable
+- Finally we append the element to the DOM using the `root`'s render method.
 
 Let's try this new component in our browser too!
 
@@ -178,7 +173,7 @@ So far we've seen two different ways of writing components and attaching them to
 Let's add the following script above our `button.js` script in the `index.html`:
 
 ```html
-<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script src="https://unpkg.com/babel-standalone/babel.min.js"></script>
 ```
 
 Next modify the type for the `button.js` script:
@@ -212,16 +207,10 @@ return (
 )
 ```
 
-Comment out the following line:
-
-```js
-// const element = React.createElement(Button)
-```
-
-Modify the `ReactDOM.render` with the following:
+Modify the `root.render` with the following:
 
 ```jsx
-ReactDOM.render(<Button />, container)
+root.render(<Button />)
 ```
 
 Let's take a look at the browser one more time!
@@ -285,37 +274,37 @@ Out of the box we get a few files and folders:
 In the `src` folder, open the provided `index.js` file:
 
 ```jsx
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './index.css'
-import App from './App'
-import reportWebVitals from './reportWebVitals'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-)
+  </React.StrictMode>
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals()
+reportWebVitals();
 ```
 
 So, theres a few new things going on, but there is one bit of code that does stand out:
 
 ```jsx
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-)
+  </React.StrictMode>
+);
 ```
 
-This looks familiar! Our previous example had almost the exact same code!
+This looks familiar! Our previous example had very similar code.
 
 Let's take a look at the `App.js` file:
 
